@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Board</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <h1>Add New Message</h1>
+    <a href=".." class="back-btn">⬅ Go Back</a>
+    <form action="/new" method="POST">
+      <label>
+        Username
+        <input name="usernameText" type="text" />
+      </label>
+      <label>
+        Message
+        <input name="messageText" type="text" />
+      </label>
+      <button>Send</button>
+    </form>
+    <%- include("./components/footer") %>
+  </body>
+</html>
