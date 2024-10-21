@@ -13,9 +13,9 @@
     <main>
       <% messages.map(message => { %>
       <div class="msg-container">
-        <p class="msg-name"><%= message.user || "empty name" %></p>
-        <p class="msg-txt"><%= message.text || "empty message" %></p>
-        <p class="msg-date"><%= message.added %></p>
+        <p class="msg-name"><%= message.username || "empty name" %></p>
+        <p class="msg-txt"><%= message.message || "empty message" %></p>
+        <p class="msg-date"><%= message.date %></p>
       </div>
       <% })%>
     </main>
